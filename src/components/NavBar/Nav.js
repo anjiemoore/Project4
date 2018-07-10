@@ -23,10 +23,15 @@ class NavBar extends Component {
             active={activeItem === 'surrender'}
             onClick={this.handleItemClick}
           />
+          <Menu.Item
+            name='adopt'
+            active={activeItem === 'adopt'}
+            onClick={this.handleItemClick}
+          />
           <Menu.Menu position='right'>
             <Menu.Item
               name='login/logout'
-              active={activeItem === 'login/logout'}
+              active={activeItem === 'Login'}
               onClick={this.handleItemClick}
             />
           </Menu.Menu>

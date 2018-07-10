@@ -65,7 +65,7 @@ class FormPage extends Component {
       id='form-button-control-public'
       control={Button}
       content='Confirm'
-      label='La'
+      label='confim'
     />
   </Form>
 )

@@ -7,7 +7,7 @@ var imgPath =
 
 const surrenderAnimalSchema = new Schema({
   name: { type: String, required: true },
-  image: {}
+  image: { data: Buffer, contentType: String, required: true },
   about: String,
   date: { type: Date, default: Date.now }
 });
