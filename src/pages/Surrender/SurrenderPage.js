@@ -3,7 +3,6 @@ import API from "../../utils/API";
 import { Link } from "react-router-dom";
 import { Form, Input, TextArea, Button } from 'semantic-ui-react'
 
-
 class FormPage extends Component {
   state = {
     name: "",
@@ -26,7 +25,7 @@ class FormPage extends Component {
         image: this.state.image,
         about: this.state.about
       })
-        .then(res => this.())
+        .then()
         .catch(err => console.log(err));
     }
   };
