@@ -1,9 +1,7 @@
-
-
 import React, { Component } from 'react'
 import { Menu, Segment } from 'semantic-ui-react'
 
-class MenuExampleSecondaryPointing extends Component {
+class NavBar extends Component {
   state = { activeItem: 'home' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
@@ -21,25 +19,21 @@ class MenuExampleSecondaryPointing extends Component {
             onClick={this.handleItemClick}
           />
           <Menu.Item
-            name='friends'
-            active={activeItem === 'friends'}
+            name='surrender'
+            active={activeItem === 'surrender'}
             onClick={this.handleItemClick}
           />
           <Menu.Menu position='right'>
             <Menu.Item
-              name='logout'
-              active={activeItem === 'logout'}
+              name='login/logout'
+              active={activeItem === 'login/logout'}
               onClick={this.handleItemClick}
             />
           </Menu.Menu>
         </Menu>
-
-        <Segment>
-          <img src='/images/wireframe/media-paragraph.png' />
-        </Segment>
       </div>
     )
   }
 }
 
-export default MenuExampleSecondaryPointing;
+export default NavBar;
